@@ -5,12 +5,19 @@ import Map from './Map';
 import Filters from './Filters';
 import Legend from './Legend';
 import Cards from './Cards';
+import PriceChart from './PriceChart';
 
 const MainWrapper = styled.main
   max-width: 100%;
   margin: 0 auto;
   padding: 1rem;
   padding-bottom: 100px;
+;
+
+const ChartContainer = styled.div
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
 ;
 
 const UploadQuoteButton = styled.button
@@ -48,6 +55,9 @@ function Main({ onUploadQuote, onFindInstaller }) {
       <Map />
       <Filters />
       <Legend />
+      <ChartContainer>
+        <PriceChart />
+      </ChartContainer>
       <Cards />
       <UploadQuoteButton onClick={onUploadQuote}>Upload Quote</UploadQuoteButton>
       <FindInstallerButton onClick={onFindInstaller}>Find Installer</FindInstallerButton>
