@@ -1,16 +1,21 @@
 import React from 'react';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import { GlobalStyles } from './styles/GlobalStyles';
+import WelcomeSlider from './components/WelcomeSlider';
+import './App.css';
 
-export default function App() {
+function App() {
   return (
-    <>
-      <GlobalStyles />
-      <Header />
-      <Main />
-      <Footer />
-    </>
+    <div className="App">
+      <header className="App-header">
+        <h1>Welcome to MikeNet</h1>
+      </header>
+      <main>
+        <WelcomeSlider />
+        <div className="content-placeholder">
+          <p>Future content will be added here.</p>
+        </div>
+      </main>
+    </div>
   );
 }
+
+export default App;
