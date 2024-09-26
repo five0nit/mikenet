@@ -1,7 +1,7 @@
 import React from 'react';;
 import styled from 'styled-components';;
 
-const FooterWrapper = styled.footer;
+const FooterWrapper = styled.footer;;
   background-color: #0072CE;;
   color: white;;
   text-align: center;;

@@ -1,7 +1,7 @@
 import React from 'react';;
 import styled from 'styled-components';;
 
-const MainWrapper = styled.main;
+const MainWrapper = styled.main;;
   max-width: 1200px;;
   margin: 0 auto;;
   padding: 2rem;;
