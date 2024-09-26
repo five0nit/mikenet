@@ -18,7 +18,7 @@ const WelcomeSlider = () => {
 
   return (
     <div className="welcome-slider">
-      <div className="slide-container" style={{ transform: 	ranslateX(-${currentSlide * 100}%) }}>
+    <div className="slide-container" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
         {slides.map((slide, index) => (
           <div key={index} className="slide">
             <div className="slide-content">
@@ -33,7 +33,7 @@ const WelcomeSlider = () => {
         {slides.map((_, index) => (
           <span
             key={index}
-            className={dot ${index === currentSlide ? 'active' : ''}}
+            className={dot }
             onClick={() => setCurrentSlide(index)}
           ></span>
         ))}
